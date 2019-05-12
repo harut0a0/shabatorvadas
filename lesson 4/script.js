@@ -1,6 +1,6 @@
 
 
-
+/*
 var matrix = []
 var n = 15
 var m = 15
@@ -100,3 +100,43 @@ function draw() {
         }
     }
 }
+*/
+//1//
+/*
+var clickCount = 0;
+function clickHandler(evt){
+   clickCount++;
+   console.log(evt);
+   var str = "Thanks for clicking " + clickCount;
+   this.innerText = str;
+}
+
+var p = document.getElementById("pElement");
+p.addEventListener("click", clickHandler);
+*/
+//2//
+/*
+function bodyClick(evt) {
+    console.log(evt.pageX, evt.pageY);
+ }
+ window.onclick = bodyClick;
+ */
+//3//
+/*
+function windowLoad() {
+    console.log("Window is loaded");
+ }
+ window.onload = windowLoad;
+ */
+ //4//
+ /*
+function click(evt) {
+    console.log(evt.pageX, evt.pageY);
+ }
+ window.onclick = click;
+ */
+function keydown(evt) {
+    console.log("You printed " + evt.key);
+ }
+ window.onkeydown = keydown;
+ 
